@@ -1,5 +1,11 @@
 FROM python:3.11-slim
 
+LABEL org.opencontainers.image.title="Playwell" \
+      org.opencontainers.image.description="A (mostly) stateless REST API server for LEGO kit information and instructions" \
+      org.opencontainers.image.version="1.0.0" \
+      org.opencontainers.image.source="https://github.com/ModestBitboard/playwell-server" \
+      org.opencontainers.image.licenses="GPLv3"
+
 # Prevent Python from writing .pyc files and force stdout/stderr to be unbuffered.
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1

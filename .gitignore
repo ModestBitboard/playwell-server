@@ -221,3 +221,4 @@ __marimo__/
 
 # Project-specific files and directories
 /data/
+tests/fixtures/*_page.html

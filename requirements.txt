@@ -1,0 +1,8 @@
+fastapi
+sqlmodel
+uvicorn
+beautifulsoup4
+httpx
+aiofiles
+pytest
+pydantic

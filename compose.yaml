@@ -1,0 +1,9 @@
+services:
+  playwell:
+    image: ghcr.io/modestbitboard/playwell-server:latest
+    container_name: playwell-server
+    restart: unless-stopped
+    volumes:
+      - ./playwell-data:/data
+    ports:
+      - "5346:5346"

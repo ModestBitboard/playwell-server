@@ -37,7 +37,7 @@ tags = [
 app = FastAPI(
     title="Playwell API",
     description="A (mostly) stateless REST API server for LEGO kit information and instructions.\n\n**Source Code:** [GitHub Repository](https://github.com/ModestBitboard/playwell-server)",
-    version="1.0.0",
+    version="1.0.1",
     lifespan=lifespan,
     license_info={
         "name": "GNU General Public License v3.0 (GPLv3)",

@@ -41,7 +41,7 @@ class Instruction(SQLModel, table=True):
     pdf_url: str = Field(description="URL for the booklet PDF on LEGO's CDN.")
     cover_url: Optional[str] = Field(default=None, description="URL for the booklet's cover image on LEGO's CDN.")
     is_pdf_cached: bool = Field(default=False, description="Indicates if the booklet PDF has been added to the local server storage.")
-    is_cover_cached: bool = Field(default=None, description="Indicates if the booklet cover image has been added to the local server storage.")
+    is_cover_cached: bool = Field(default=False, description="Indicates if the booklet cover image has been added to the local server storage.")
 
     kit: Optional[Kit] = Relationship(back_populates="instructions")
 

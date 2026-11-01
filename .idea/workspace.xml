@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ad7dd33-1fe2-456f-ad0c-d6f4031e748a" name="Changes" comment="" />
+    <list default="true" id="8ad7dd33-1fe2-456f-ad0c-d6f4031e748a" name="Changes" comment="- Added tests/fixtures/*_page.html files to .gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.fetch.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -105,13 +110,22 @@
       <option name="project" value="LOCAL" />
       <updated>1793454702759</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- Added tests/fixtures/*_page.html files to .gitignore">
+      <option name="closed" value="true" />
+      <created>1793484644400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1793484644400</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Fixed publish.yml&#10;- Added proper labels to Dockerfile" />
     <MESSAGE value="- Patched bug where Instruction.is_cover_cached would default to None instead of False, leading to new entries in the DB causing internal server errors.&#10;- Removed *_page.html files from tests/fixtures in order to avoid potential issues with LEGO and to encourage users to scrape up-to-date copies before testing." />
     <MESSAGE value="- Pushed version to v1.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Pushed version to v1.0.1" />
+    <MESSAGE value="- Added tests/fixtures/*_page.html files to .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added tests/fixtures/*_page.html files to .gitignore" />
   </component>
 </project>

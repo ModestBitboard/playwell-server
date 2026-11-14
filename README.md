@@ -3,7 +3,14 @@
 </p>
 
 ## Playwell API
-Playwell API is a (mostly) stateless, read-through caching REST API engine written in Python and FastAPI. It scrapes LEGO.com for metadata, images, and instructions, and stores the scraped data in a SQLite database for easy access. It presents all of this information as an easy-to-use REST API and wrappers for various languages.
+
+![Playwell Version](https://img.shields.io/badge/playwell-v1-red)
+![GitHub License](https://img.shields.io/github/license/ModestBitboard/playwell-server?logo=gplv3&logoColor=white)
+
+
+Playwell API is a (mostly) stateless, read-through caching REST API engine written in Python and FastAPI. It scrapes LEGO.com for metadata, images, and instructions, and stores the scraped data in a SQLite database for easy access. It presents all of this information as an easy-to-use REST API and SDKs for various languages.
+
+A public instance is hosted at `https://playwell.bitboard.ca`, which all SDKs default to.
 
 ## Features
 * **Stateless Laziness (Read-Through Caching):** If a resource is requested that isn't stored locally, the server instantly enters a synchronized concurrency lock, scrapes LEGO's website, and adds collected information to the database; all before forwarding that info to the client.
@@ -29,8 +36,14 @@ While more than half of the endpoints aren't truly stateless, as long as a clien
 
 You can also view these endpoints and their usage information at `/docs` or `/redoc` for Swagger UI and ReDoc respectively.
 
+## Related Projects
+
+* [playwell-server](https://github.com/ModestBitboard/playwell-server) - The FastAPI backend server.
+* [playwell-py](https://github.com/ModestBitboard/playwell-py) - The official Python SDK.
+* [playwell-go](https://github.com/ModestBitboard/playwell-go) - The official Go SDK.
+
 ## License
-Distributed under the GPLv3 License. See [LICENSE](./LICENSE) for more information.
+Distributed under the GPLv3 License. See [LICENSE](https://github.com/ModestBitboard/playwell-server/blob/main/LICENSE) for more information.
 
 ## Support
 If you liked this project, go ahead and give it a star! And if it really helped you out, consider sending me a tip.
